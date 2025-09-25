@@ -544,3 +544,71 @@ Log the object when it's constructed.
 Solve Exercise 21 here:
 */
 
+let obj = {
+    grass: [],
+    fire: [],
+    water: [],
+    electric: [],
+    dragon: [],
+    psychic: [],
+    ice: [],
+    normal: [],
+    bug: [],
+    ground: [],
+    poison: [],
+    fighting: [],
+    ghost: [],
+    fairy: [],
+}
+
+for(let i = 0; i < pokemon.length; i++) {
+    switch (pokemon[i].type) {
+        case 'grass':
+            obj.grass.push(pokemon[i]);
+            break;
+        case 'fire':
+            obj.fire.push(pokemon[i]);
+            break;
+        case 'water':
+            obj.water.push(pokemon[i]);
+            break;
+        case 'electric':
+            obj.electric.push(pokemon[i]);
+            break;
+        case 'dragon':
+            obj.dragon.push(pokemon[i]);
+            break;
+        case 'psychic':
+            obj.psychic.push(pokemon[i]);
+            break;
+        case 'ice':
+            obj.ice.push(pokemon[i]);
+            break;
+        case 'normal':
+            obj.normal.push(pokemon[i]);
+            break;
+        case 'bug':
+            obj.bug.push(pokemon[i]);
+            break;
+        case 'ground':
+            obj.ground.push(pokemon[i]);
+            break;
+        case 'poison':
+            obj.poison.push(pokemon[i]);
+            break;
+        case 'fighting':
+            obj.fighting.push(pokemon[i]);
+            break;
+        case 'ghost':
+            obj.ghost.push(pokemon[i]);
+            break;
+        case 'fairy':
+            obj.fairy.push(pokemon[i]);
+            break;
+        default:
+            obj.normal.push(pokemon[i]);
+            break;
+    }
+}
+
+console.dir(obj, {maxArrayLength: null});
